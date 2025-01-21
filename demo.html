@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshers' Day Program</title>
+    <style>
+        /* Inbuilt CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #4CAF50;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Freshers' Day Program</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Program Details</h2>
+            <ul>
+                <li>Welcome Speech</li>
+                <li>Song Performance</li>
+                <li>Dance Performances</li>
+                <li>Game Shows</li>
+                <li>Mr. and Ms. Fresher Competition</li>
+                <li>Closing Ceremony</li>
+                <li>DJ Session</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Interactive Section</h2>
+            <p>Click the button below to display a welcome message:</p>
+            <button onclick="showMessage()">Click Me</button>
+            <p id="message" style="color: #4CAF50; font-weight: bold; margin-top: 10px;"></p>
+        </section>
+    </main>
+    <script>
+        // JavaScript functionality
+        function showMessage() {
+            document.getElementById('message').textContent = "Welcome to Freshers' Day 2025!";
+        }
+    </script>
+</body>
+</html>
